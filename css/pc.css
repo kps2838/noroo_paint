@@ -751,15 +751,6 @@ main section .title .line{
 }
 
 
-#more{
-    background: transparent;
-    border: none;
-    margin-top: 15px;
-    position: absolute;
-    bottom: 20px;
-    right: 18px;
-}
-
 #news .info-container{
     display: flex;
     justify-content: space-between;

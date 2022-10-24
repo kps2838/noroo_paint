@@ -15,25 +15,29 @@ header{
 }
 
 #gnb > ul {
-    width: 100%;
+    width: 50vw;
+    height: 100vh;
     background: rgba(255, 255, 255, 0.9); 
     position: absolute;
     top: 80px;
+    right: -50vw;
     z-index: 99;
-    display: none;
+    transition: all 0.5s;
+    overflow: scroll;
 }
 
 #gnb > ul.on{
     display: block;
+    right: 0;
 }
 
 #gnb > ul > li{
     text-align: left;
-    display: block;
-    width: 100vw;
-    height: 50px;
+    display: inline-block;
+    width: 50vw;
+    height: 60px;
     padding-left: 15px;
-    line-height: 50px;
+    line-height: 60px;
 }
 
 #gnb > ul > li > a{
@@ -46,6 +50,32 @@ header{
     right: 10px;
 }
 
+#gnb .depth2 {
+    padding-left: 20px;
+    display: none;
+}
+
+#gnb .depth2.on {
+    display: block;
+}
+
+#gnb .depth2 a{
+    color: #000;
+}
+
+#main-header .bg_dark{
+    width: 100vw;
+    height: calc(100vh - 80px);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 50;
+    position: absolute;
+    top: 80px;
+    display: none;
+}
+
+#main-header .bg_dark.on{
+    display: block;
+}
 
 
 #main-header{
