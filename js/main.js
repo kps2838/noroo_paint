@@ -4,7 +4,7 @@ $(function(){
     }
     let w = window.innerWidth;
     console.log(w);
-    if(w >= 768){
+    if(w >= 1024){
         $('#gnb > ul > li').mouseover(function(){
             $('#gnb').css('height','409px')
             setTimeout(function(){
@@ -130,7 +130,102 @@ $(function(){
 
 
 
-    } else{
+    } else if (w >= 768 && w <= 1023){
+        $('#gnb > ul > li').mouseover(function(){
+            $('#gnb').css('height','409px')
+            setTimeout(function(){
+                $('.depth2').addClass('on')
+            },200);
+            $('.menu-line').addClass('on')
+        });
+
+        $('#gnb').mouseleave(function(){
+            $('#gnb').css('height','96px');            
+            setTimeout(function(){
+                $('.depth2').removeClass('on')
+            },150);            
+            $('.menu-line').removeClass('on');
+        });
+
+
+        $('#site-map').click(function(){
+            $('.sitemap-modal').css('top', '0').css('opacity','1')
+        });
+    
+        $('#close').click(function(){
+            $('.sitemap-modal').css('top', '-100vh').css('opacity','0')
+        });
+
+
+        let m_sns_position = 0;
+        let sns_slideNum = 0;
+        let w_90vw = parseInt($(window).width() * 0.9);
+    
+        $('#sns .btn .next').click(function(){
+            if(sns_slideNum < 2){
+                m_sns_position -= w_90vw + 20;
+                $('#sns .sns_slide .sns_slide_wrap').css('transform', `translateX(${m_sns_position}px)`);
+                sns_slideNum = sns_slideNum+1;
+            };
+        });
+    
+        $('#sns .btn .prev').click(function(){
+            if(sns_slideNum > 0){
+                m_sns_position += w_90vw + 20;
+                $('#sns .sns_slide .sns_slide_wrap').css('transform', `translateX(${m_sns_position}px)`);
+                sns_slideNum = sns_slideNum-1;
+            } 
+            else if(sns_slideNum == 0){
+                $('#sns .sns_slide .sns_slide_wrap').css('transform', `translateX(0)`);
+    
+            }
+        });
+
+        $('#sns .images li:not(:first-child) img').hover(function(){
+            let photo = $(this).attr('src');
+            $(this).parents('.images').find('li:first-child img').attr('src', photo);
+        }, function(){
+            let photo = $(this).attr('src');
+            let original = photo.substring(0, photo.length-5) + `1.jpg`;
+            console.log(original);
+            $(this).parents('.images').find('li:first-child img').attr('src', original);
+        });
+
+    
+        $('#news .info-container .info-box').hover(function(){
+            $(this).find('.text').css('top','0')}
+            , function(){
+            $(this).find('.text').css('top','236px')
+        });
+
+
+
+        $('#media .btn .next').click(function(){
+            $('#media .media_slide .media_slide_wrap').css('transform', `translateX(-80vw)`);
+            $(this).find('img').css('opacity','0.5');
+            $('#media .btn .prev img').css('opacity', '1');
+            $('#media .btn p').text('2/2');
+        });
+    
+    
+        $('#media .btn .prev').click(function(){
+            $('#media .media_slide .media_slide_wrap').css('transform', `translateX(0)`);
+            $(this).find('img').css('opacity','0.5');
+            $('#media .btn .next img').css('opacity', '1');
+            $('#media .btn p').text('1/2');
+        });
+    
+    
+        $('#media .media-box').hover(function(){
+            $(this).css('background-size', '120%');
+            $(this).find('.media-title').css('width','100%').css('height','100%');
+        }, function(){
+            $(this).css('background-size', '100%');
+            $(this).find('.media-title').css('width','250px').css('height','250px');
+        });
+
+    }
+    else if (w <= 767){
     $('#gnb .mobile-menu').click(function(){
         $('#main-header .bg_dark').toggleClass('on');
         $('#gnb > ul').toggleClass('on');
@@ -214,7 +309,7 @@ $(function(){
           }
         });
       },{
-        threshold : 0.5,
+        threshold : 0.3,
       });
 
       const about = document.querySelectorAll('#about > div');
@@ -228,7 +323,5 @@ $(function(){
 
       const media = document.querySelectorAll('#media div');
       media.forEach(el => observer.observe(el));
-
-
 
 })
