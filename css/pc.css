@@ -6,6 +6,7 @@
 
 #main-header{
     margin: 0 auto;
+    position: relative;
 }
 
 /* top menu 영역 */
@@ -151,7 +152,7 @@
 
 #main-header .swiper{
     width: 100vw;
-    height: 100vh;
+    height: 910px;
     position: relative;
 }
 
@@ -179,19 +180,19 @@
 
 .swiper .swiper-wrapper .swiper-slide.s1{
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-image: url(../images/main_visual01.jpg);
 }
 
 .swiper .swiper-wrapper .swiper-slide.s2{
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-image: url(../images/main_visual02.jpg);
 }
 
 .swiper .swiper-wrapper .swiper-slide.s3{
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-image: url(../images/main_visual03.jpg);
 }
 
@@ -230,6 +231,7 @@
     background: #fff !important;
     opacity: 1;
   }
+
 
   /* 사이트맵 */
 
@@ -329,6 +331,7 @@
       font-size: 22px;
       font-weight: 500;
   }
+
 
 
   /* about 영역 */
