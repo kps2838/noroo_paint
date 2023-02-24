@@ -195,7 +195,7 @@ $(function(){
         $('#news .info-container .info-box').hover(function(){
             $(this).find('.text').css('top','0')}
             , function(){
-            $(this).find('.text').css('top','236px')
+            $(this).find('.text').css('top','275px')
         });
 
 
@@ -266,7 +266,12 @@ $(function(){
     });
 
 
-    $('#news .info-container .info-box').off();
+    // $('#news .info-container .info-box').off();
+    $('#news .info-container .info-box').click(function(){
+        $('#news .info-container .info-box').find('.text').css('top', '140px');
+        $(this).find('.text').css('top','0');
+    });
+    
 
 
     $('#media .btn .next').click(function(){

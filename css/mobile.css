@@ -57,6 +57,7 @@ header{
 
 #gnb .depth2.on {
     display: block;
+
 }
 
 #gnb .depth2 a{
@@ -119,10 +120,11 @@ header{
     text-align: center;
     color: #fff;
     font-size: 15px;
-    font-weight: 500;
+    line-height: 160%;
 }
 
 .swiper .swiper-wrapper .swiper-slide .title span {
+    font-family: 'welcome_bold', sans-serif;
     font-size: 30px;
 }
 
@@ -181,7 +183,7 @@ header{
 
 #about h2{
     font-size: 22px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     margin-bottom: 10px;
 }
 
@@ -191,7 +193,7 @@ header{
 
 #about p{
     font-size: 12px;
-    font-weight: 400;
+    line-height: 140%;
     text-align: right;
 }
 
@@ -222,18 +224,18 @@ header{
 
 #banner .title > p{
     font-size: 15px;
-    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 #banner .title > h3{
     font-size: 22px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
 }
 
 #banner .title > button{
     display: inline-block;
     font-size: 12px;
-    font-weight: 500;
+    font-family: 'welcome_regular', sans-serif;
     padding: 10px;
     color: #fff;
     margin-top: 10px;
@@ -283,7 +285,7 @@ main section .title{
     width: 100vw;
     display: flex;
     font-size: 28px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     flex-direction: column;
     align-items: center;
     color: var(--main-color);
@@ -407,13 +409,12 @@ main section .title .line{
 
 #sns .sns_container .text-box > h3{
     font-size: 18px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     margin-bottom: 5px;
 }
 
 #sns .sns_container .text-box > p{
     font-size: 13px;
-    font-weight: 400;
 }
 
 #sns .btn button{
@@ -541,18 +542,17 @@ main section .title .line{
     width: 186px;
     height: 53px;
     font-size: 12px;
-    font-weight: 500;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 #news .info-container .info-box .text p{
-    font-size: 15px;
-    font-weight: 400;
-    margin: 0 auto;
-    margin-top: 15px;
-    width: 294px;
+    font-size: 5px;
+    line-height: 140%;
+    padding: 0 10px;
+    margin-top: 5px;
+    width: 186px;
     text-align: center;
 }
 
@@ -731,7 +731,7 @@ main section .title .line{
     left: 50%;
     transform: translate(-50%, -50%);
     color: #fff;
-    padding: 5px;
+    padding-left: 5px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -742,20 +742,20 @@ main section .title .line{
 
 #media .media-box .media-title > h3{
     font-size: 14px;
-    font-weight: 600;
+    font-family: 'welcome_bold', sans-serif;
 }
 
 #media .media-box .media-title > P{
     font-size: 13px;
-    font-weight: 500;
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
 #media .media-box .media-title button{
     font-size: 8px;
+    font-family: 'welcome_regular', sans-serif;
     border: 1px solid #fff;
-    padding: 1px 2px;
+    padding: 2px 4px;
     background-color: transparent;
     color: #fff;
     transition: all 0.3s;
@@ -792,6 +792,8 @@ main section .title .line{
 #main-footer .text{
     text-align: center;
     order: 3;
+    color: #989898;
+
 }
 
 #main-footer .text p{

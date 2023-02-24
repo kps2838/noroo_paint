@@ -54,7 +54,7 @@
 
 #gnb > ul {
     display: flex;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 #gnb > ul > li > a{
@@ -186,11 +186,12 @@
     text-align: center;
     color: #fff;
     font-size: 4vw;
-    font-weight: 500;
+    line-height: 160%;
 }
 
 .swiper .swiper-wrapper .swiper-slide .title span {
     font-size: 6vw;
+    font-family: 'welcome_bold', sans-serif;
 }
 
 .swiper-pagination-bullet {
@@ -365,7 +366,7 @@
 #about h2{
     text-align: right;
     font-size: 5vw;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     margin-bottom: 30px;
 }
 
@@ -374,10 +375,10 @@
 }
 
 #about p{
-    padding-right: 10vw;
+    padding-right: 12vw;
     font-size: 2vw;
-    font-weight: 400;
     text-align: right;
+    line-height: 140%;
 }
 
 
@@ -407,19 +408,18 @@
 
 #banner .title > p{
     font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #banner .title > h3{
     font-size: 30px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
 }
 
 #banner .title > button{
     display: inline-block;
+    font-family: 'welcome_regular';
     font-size: 20px;
-    font-weight: 500;
     color: #fff;
     margin-top: 15px;
     background-color: transparent;
@@ -466,7 +466,7 @@ main section .title{
     width: 100vw;
     display: flex;
     font-size: 5vw;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     flex-direction: column;
     align-items: center;
     color: var(--main-color);
@@ -590,13 +590,12 @@ main section .title .line{
 
 #sns .sns_container .text-box > h3{
     font-size: 20px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     margin-bottom: 15px;
 }
 
 #sns .sns_container .text-box > p{
     font-size: 16px;
-    font-weight: 400;
 }
 
 #sns .btn button{
@@ -729,15 +728,14 @@ main section .title .line{
     width: 40vw;
     height: 10vw;
     font-size: 20px;
-    font-weight: 500;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 #news .info-container .info-box .text p{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
     margin: 0 auto;
     margin-top: 15px;
     width: 294px;
@@ -925,12 +923,11 @@ main section .title .line{
 
 #media .media-box .media-title > h3{
     font-size: 24px;
-    font-weight: 600;
+    font-family: 'welcome_bold', sans-serif;
 }
 
 #media .media-box .media-title > P{
     font-size: 16px;
-    font-weight: 500;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -942,6 +939,7 @@ main section .title .line{
     background-color: transparent;
     color: #fff;
     transition: all 0.3s;
+    font-family: 'welcome_regular', sans-serif;
 }
 
 #media .media-box .media-title button:hover{
@@ -956,7 +954,7 @@ main section .title .line{
 
 #main-footer{
     width: 100vw;
-    height: 250px;
+    height: 220px;
     background: #333;
     color: #fff;
     justify-content: left;
@@ -974,16 +972,17 @@ main section .title .line{
     position: absolute;
     top: 20px;
     left: 200px;
+    color: #989898;
 }
 
 
 #main-footer .text .footer-menu{
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 #main-footer .text .footer-menu li a{
-    color: #fff;
+    color: #989898;
     font-size: 12px;
     font-weight: 400;
 }
@@ -996,7 +995,6 @@ main section .title .line{
 
 #main-footer .text p{
     font-size: 12px;
-    font-weight: 400;
 }
 
 #main-footer .text .copy{
@@ -1006,7 +1004,7 @@ main section .title .line{
 #main-footer .footer-right{
 display: flex;
 position: absolute;
-top: 150px;
+top: 135px;
 right: 20px;
 }
 
@@ -1027,7 +1025,7 @@ right: 20px;
 #main-footer .mark{
     display: flex;
     position: absolute;
-    top: 140px;
+    top: 125px;
     left: 20px;
     align-items: center;
 }

@@ -1,5 +1,3 @@
-
-
 .mobile-only{
     display: none;
 }
@@ -58,7 +56,7 @@
 #gnb > ul{
     display: flex;
     position: absolute;
-    top: 29px;
+    top: 38px;
     right: 219px;
 }
 
@@ -206,11 +204,13 @@
     text-align: center;
     color: #fff;
     font-size: 45px;
-    font-weight: 500;
+    line-height: 140%;
 }
 
 .swiper .swiper-wrapper .swiper-slide .title span {
     font-size: 64px;
+    font-family: 'welcome_bold', sans-serif;
+
 }
 
 .swiper-pagination-bullet {
@@ -283,7 +283,7 @@
 }
 
 .sitemap-modal > ul > li{
-    width: 196px;
+    width: 180px;
     text-align: center;
 }
 
@@ -312,8 +312,8 @@
   }
 
   .sitemap-modal > ul > li > a{
-      font-size: 35px;
-      font-weight: 600;
+    font-family: 'welcome_bold', sans-serif;
+    font-size: 35px;
   }
 
   .sitemap-modal .depth2 li{
@@ -329,7 +329,6 @@
 
   .sitemap-modal .depth2 li a{
       font-size: 22px;
-      font-weight: 500;
   }
 
 
@@ -383,7 +382,7 @@
 #about h2{
     text-align: right;
     font-size: 60px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     margin-bottom: 50px;
 }
 
@@ -394,7 +393,7 @@
 #about p{
     padding-right: 228Px;
     font-size: 20px;
-    font-weight: 400;
+    line-height: 140%;
     text-align: right;
 }
 
@@ -425,19 +424,18 @@
 
 #banner .title > p{
     font-size: 34px;
-    font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #banner .title > h3{
     font-size: 48px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
 }
 
 #banner .title > button{
     display: inline-block;
+    font-family: 'welcome_regular', sans-serif;
     font-size: 24px;
-    font-weight: 500;
     padding: 10px;
     color: #fff;
     margin-top: 15px;
@@ -485,7 +483,7 @@ main section .title{
     width: 1440px;
     display: flex;
     font-size: 42px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     flex-direction: column;
     align-items: center;
     color: var(--main-color);
@@ -599,13 +597,13 @@ main section .title .line{
 
 #sns .sns_container .text-box > h3{
     font-size: 30px;
-    font-weight: 500;
+    font-family: 'welcome_bold', sans-serif;
     margin-bottom: 35px;
 }
 
 #sns .sns_container .text-box > p{
     font-size: 18px;
-    font-weight: 400;
+    line-height: 140%;
 }
 
 #sns .sns_container .text-box > a{
@@ -732,19 +730,19 @@ main section .title .line{
     width: 330px;
     height: 94px;
     font-size: 20px;
-    font-weight: 500;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 #news .info-container .info-box .text p{
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 16px;
     margin: 0 auto;
     margin-top: 15px;
     width: 294px;
     text-align: center;
+    line-height: 140%;
+
 }
 
 #news .info-container .info-box .text a{
@@ -942,19 +940,19 @@ main section .title .line{
 
 
 #media .media-box .media-title > h3{
-    font-size: 35px;
-    font-weight: 600;
+    font-size: 28px;
+    font-family: 'welcome_bold', sans-serif;
 }
 
 #media .media-box .media-title > P{
     font-size: 24px;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #media .media-box .media-title button{
     font-size: 16px;
+    font-family: 'welcome_regular', sans-serif;
     border: 1px solid #fff;
     padding: 6px 12px;
     background-color: transparent;
@@ -988,6 +986,7 @@ main section .title .line{
     position: absolute;
     top: 20px;
     left: 168px;
+    color: #989898;
 }
 
 
@@ -998,9 +997,8 @@ main section .title .line{
 }
 
 #main-footer .text .footer-menu li a{
-    color: #fff;
+    color: #989898;
     font-size: 16px;
-    font-weight: 400;
 }
 
 #main-footer .text .footer-menu li span{
@@ -1009,8 +1007,7 @@ main section .title .line{
 }
 
 #main-footer .text p{
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 12px;
 }
 
 #main-footer .text .copy{

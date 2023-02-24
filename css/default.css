@@ -2,6 +2,16 @@
     --main-color : #5DA62B;
 }
 
+@font-face {
+    font-family: welcome_bold;
+    src: url(../font/welcome_Bold.ttf);
+}
+
+@font-face {
+    font-family: welcome_regular;
+    src: url(../font/welcome_regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,8 +23,7 @@ ul{
 }
 
 body{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-weight: 400;
+    font-family: 'welcome_regular', sans-serif;
     color: #333;
 }
 
